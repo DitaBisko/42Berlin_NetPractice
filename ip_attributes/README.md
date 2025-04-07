@@ -1,11 +1,10 @@
-# IP Subnet Properties Checker
+# IP Attributes
 
-This project was something I built as part of the **NetPractice** module from the **42 Network curriculum** — but honestly, it was mainly for me.
+This project was something I built as part of the **NetPractice** module from the **42 Network curriculum**.
 
 I created this tool because I wanted to understand networking and subnetting **deeply**, not just memorize formulas or blindly use online calculators. Writing the logic myself — calculating network and broadcast addresses, host ranges, and CIDR math — helped me learn how it *actually works*. I also used it to get better at **Python**, so it became a small personal sandbox.
 
 ---
-* [🧠  I built this tool to:](#-i-built-this-tool-to)
 * [🛠️ What It does](#-what-it-does)
 * [📁 Files](#-files)
 * [▶️ How to use](#-how-to-use)
@@ -42,8 +41,8 @@ I created this tool because I wanted to understand networking and subnetting **d
 
 ## 📁 Files
 
-- `ip_subnet_props.py` – main script that calculates everything
-- `integration_test_ip_subnet_props.py` – test runner for checking logic vs Python’s standard `ipaddress` module
+- `ip_attributes.py` – main script that calculates everything
+- `integration_test_ip_attributes.py` – test runner for checking logic vs Python’s standard `ipaddress` module
 - `reserved_ip.json` – definitions and metadata about known reserved IP ranges
 
 ---
@@ -54,10 +53,10 @@ Run it from terminal with either CIDR or netmask syntax:
 
 ```bash
 # Using CIDR
-python3 ip_subnet_props.py 192.168.1.45/24
+python3 ip_attributes.py 192.168.1.45/24
 
 # Or using subnet mask
-python3 ip_subnet_props.py 192.168.1.45 255.255.255.0
+python3 ip_attributes.py 192.168.1.45 255.255.255.0
 ```
 
 _Output:_
@@ -88,7 +87,7 @@ To make sure the subnet logic is correct, I wrote integration tests that compare
 Run the full test suite with:
 
 ```bash
-python3 integration_test_ip_subnet_props.py
+python3 integration_test_attributes.py
 ```
 
 ✅ **The tests check:**
