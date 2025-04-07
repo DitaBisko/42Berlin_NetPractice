@@ -87,7 +87,7 @@ To make sure the subnet logic is correct, I wrote integration tests that compare
 Run the full test suite with:
 
 ```bash
-python3 integration_test_attributes.py
+python3 integration_test_ip_atributes.py
 ```
 
 ✅ **The tests check:**
