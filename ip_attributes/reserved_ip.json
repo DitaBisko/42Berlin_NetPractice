@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Private IP address",
+    "range": "10.0.0.0 - 10.255.255.255",
+    "subnet_mask": "255.0.0.0",
+    "cidr": "/8",
+    "usage": "This block is reserved for private networks and is not routable on the public internet. Typically used for large organizations, ISPs, and corporate internal networks."
+  },
+  {
+    "category": "Private IP address",
+    "range": "172.16.0.0 - 172.31.255.255",
+    "subnet_mask": "255.240.0.0",
+    "cidr": "/12",
+    "usage": "This is another private network range, commonly used in medium to large-sized networks. It provides 16 contiguous Class B networks for internal use."
+  },
+  {
+    "category": "Private IP address",
+    "range": "192.168.0.0 - 192.168.255.255",
+    "subnet_mask": "255.255.0.0",
+    "cidr": "/16",
+    "usage": "This private range is commonly used in home networks, small business networks, and routers as the default IP range (e.g., 192.168.1.1 is often a router's gateway address)."
+  },
+  {
+    "category": "Loopback IP address",
+    "range": "127.0.0.0 - 127.255.255.255",
+    "subnet_mask": "255.0.0.0",
+    "cidr": "/8",
+    "usage": "Loopback addresses are used for local machine testing. Any IP address in this range, typically 127.0.0.1, routes back to the same device. This is useful for testing network applications and diagnosing network stack issues."
+  },
+  {
+    "category": "Link-local IP address",
+    "range": "169.254.0.0 - 169.254.255.255",
+    "subnet_mask": "255.255.0.0",
+    "cidr": "/16",
+    "usage": "This range is automatically assigned to a device when no DHCP server is available. It allows local communication between devices in the same network segment without requiring a configured IP. Commonly used in auto-configuration scenarios."
+  },
+  {
+    "category": "Multicast IP address",
+    "range": "224.0.0.0 - 239.255.255.255",
+    "subnet_mask": "Not applicable",
+    "cidr": "/4",
+    "usage": "Multicast addresses are used for broadcasting data to multiple devices simultaneously. Used in streaming, conferencing, and real-time data sharing without overwhelming the network with duplicate data."
+  },
+  {
+    "category": "Reserved IP address",
+    "range": "240.0.0.0 - 255.255.255.255",
+    "subnet_mask": "Not applicable",
+    "cidr": "/4",
+    "usage": "These addresses are reserved for future use or special purposes. They are not currently assigned for general internet traffic but may be used for experimental networking purposes."
+  },
+  {
+    "category": "Public DNS (Google) IP address",
+    "range": "8.8.8.8 - 8.8.4.4",
+    "subnet_mask": "Not applicable",
+    "cidr": "N/A",
+    "usage": "Google Public DNS is a widely used, fast, and secure DNS resolution service. It is commonly used to replace default ISP DNS resolvers to improve security, reliability, and performance when browsing the internet."
+  },
+  {
+    "category": "Public DNS (Cloudflare) IP address",
+    "range": "1.1.1.1 - 1.0.0.1",
+    "subnet_mask": "Not applicable",
+    "cidr": "N/A",
+    "usage": "Cloudflare Public DNS is a privacy-focused DNS resolver that aims to provide fast and secure domain resolution. It is an alternative to Google and ISP-provided DNS services, emphasizing user privacy."
+  },
+  {
+    "category": "Public DNS (Quad9) IP address",
+    "range": "9.9.9.9",
+    "subnet_mask": "Not applicable",
+    "cidr": "N/A",
+    "usage": "Quad9 provides a security-focused DNS resolution service that blocks known malicious domains. It is used to enhance browsing security while maintaining fast resolution speeds."
+  },
+  {
+  "category": "Special CIDR",
+  "cidr": "/31",
+  "range": "any",
+  "subnet_mask": "255.255.255.254",
+  "usage": "CIDR /31 is used for point-to-point links where only two hosts communicate. As per RFC 3021, both addresses are usable."
+  },
+  {
+    "category": "Special CIDR",
+    "cidr": "/32",
+    "range": "any",
+    "subnet_mask": "255.255.255.255",
+    "usage": "CIDR /32 is used to represent a single host IP. Commonly applied to loopback addresses or specific routing entries."
+  }
+]
